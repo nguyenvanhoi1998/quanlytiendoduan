@@ -8,7 +8,7 @@
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css">
 </head>
 <body style="background-image: url('background.jpg');">
-<div class="container"><h1 style="color:green;text-align:center;">Danh sách các file đính kèm cho dự án</h1><br>
+<div class="container"><h1 style="color:green;text-align:center;">Danh sách các file đính kèm cho dự án</h1>
 	<?php $maduan=$_GET['maduan']; 
 	$con = new mysqli("localhost","root","","quanlytiendosinhvienthuctap");
 	$con->set_charset("utf8");
