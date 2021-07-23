@@ -9,7 +9,9 @@
 </head>
 <body style="background-image: url('background.jpg');">
 <div class="container"><h1 style="color:green;text-align:center;">Danh sách các dự án con</h1><br>
-	<div>
+	<a href="themduancon.php"><input class="btn btn-outline-primary" type="button" value="Thêm dự án con mới"></a>
+	<a href="index.php"><input class="btn btn-outline-primary" type="button" value="Trang chủ"></a><br>
+	<br><div>
 		<table class="table table-bordered" style="text-align:center;">
 			<thead class="thead-dark"><tr><th>Mã dự án cha</th><th>Mã dự án con</th><th>Tên dự án con</th><th>Ngày bắt đầu</th><th>Ngày kết thúc</th><th>Tiến độ</th><th>Xem tiến độ</th><th>Cập nhật tiến độ</th><th>File đính kèm</th><th colspan=2>Lựa chọn</th></tr></thead>
 			<?php $maduan=$_GET['maduan'];
@@ -38,8 +40,6 @@
 				<td><a href="xoaduancon.php?maduancon=<?php echo $maduancon; ?>&maduancha=<?php echo $maduancha; ?>"> Xoá </a></td></tr><?php } ?>
 		</table><br>
 	</div>
-	<a href="themduancon.php"><input class="btn btn-outline-primary" type="button" value="Thêm dự án con mới"></a>
-	<a href="index.php"><input class="btn btn-outline-primary" type="button" value="Trang chủ"></a>
 </div>
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
