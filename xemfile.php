@@ -17,18 +17,17 @@
 	$tenfile = $row['tenfile'];
 	$duoi=strtolower(pathinfo($tenfile,PATHINFO_EXTENSION));
 	if($duoi=="pdf" || $duoi=="jpg" || $duoi=="png"){ echo "
-		<div><br><h5 style='color:green;text-align:center;'>Nội dung file ".$tenfile."</h5>
-		<div>
-		<embed src='./".$tenfile."' width='1365' height='500' type='application/pdf'><br>
-		<a href='danhsachfiledinhkem.php?maduan=".$maduan."'><input class='btn btn-outline-primary' type='button' value='Trở lại'></a>
-		<a href='index.php'><input class='btn btn-outline-primary' type='button' value='Trang chủ'></a>
+		<br><a href='danhsachfiledinhkem.php?maduan=".$maduan."'><input class='btn btn-outline-primary' type='button' value='Trở lại'></a>
+		<a href='index.php'><input class='btn btn-outline-primary' type='button' value='Trang chủ'></a><br>
+		<div><h5 style='color:green;text-align:center;'>Nội dung file ".$tenfile."</h5>
+		<div style='text-align:center;'>
+		<embed src='./".$tenfile."' width='1360' height='500' type='application/pdf'><br>
 		</div></div> "; } else { echo "
-		<div><br><h5 style='color:green;text-align:center;'>file ".$tenfile." đã được tải xuống</h5>
-		<div>
-		<embed src='./".$tenfile."' type='application/pdf'>
 		<a href='danhsachfiledinhkem.php?maduan=".$maduan."'><input class='btn btn-outline-primary' type='button' value='Trở lại'></a>
 		<a href='index.php'><input class='btn btn-outline-primary' type='button' value='Trang chủ'></a>
-		</div></div> ";
+		<div><h5 style='color:green;text-align:center;'>file ".$tenfile." đã được tải xuống</h5>
+		<div style='text-align:center;'>
+		<embed src='./".$tenfile."' type='application/pdf'></div></div> ";
 	} ?>
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
