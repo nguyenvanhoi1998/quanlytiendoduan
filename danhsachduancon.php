@@ -8,7 +8,7 @@
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css">
 </head>
 <body style="background-image: url('background.jpg');">
-<div class="container"><h1 style="color:green;text-align:center;">Danh sách các dự án con</h1><br>
+<div class="container"><h1 style="color:green;text-align:center;">Danh sách các dự án con</h1>
 	<a href="themduancon.php"><input class="btn btn-outline-primary" type="button" value="Thêm dự án con mới"></a>
 	<a href="index.php"><input class="btn btn-outline-primary" type="button" value="Trang chủ"></a><br>
 	<br><div>
